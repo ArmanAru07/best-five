@@ -183,20 +183,20 @@
                                 <div class="text-center">
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="inputGroup-sizing-default">Per Player</span>
-                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                        <input id="per-player-feild" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                                       </div>
-                                    <button type="button" class="btn btn-primary btn-lg">Calculate</button>
-                                    <h4 class="m-2">Player Expenses : $<span>00</span></h4>
+                                    <button id="btm-calculate" type="button" class="btn btn-primary btn-lg">Calculate</button>
+                                    <h4 class="m-2">Player Expenses : $<span id="player-cost">00</span></h4>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text" id="inputGroup-sizing-default">Manager</span>
-                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                        <input id="manager-feild" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                                       </div>
                                       <div class="input-group mb-3">
                                         <span class="input-group-text" id="inputGroup-sizing-default">Coach</span>
-                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                                        <input id="coach-feild" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                                       </div>
-                                    <button type="button" class="btn btn-primary btn-lg">Calculate Total</button>
-                                    <h4 class="m-2">Total : $<span>00</span></h4>
+                                    <button id="btn-total-calculate" type="button" class="btn btn-primary btn-lg">Calculate Total</button>
+                                    <h4 class="m-2">Total : $<span id="total-cost">00</span></h4>
                                 </div>
                                 
                             </div>
@@ -220,7 +220,8 @@
             </p>
         </div>
     </footer>
+    
     <script src="js/select-player.js"></script>
-    <script src="js/pick.js"></script>
+    <script src="js/calculation.js"></script>
 </body>
 </html>
